@@ -1,0 +1,178 @@
+html{
+  scroll-behavior: smooth;
+}
+body{  
+    height: auto;
+    width: auto ;
+    background-color: #393E46 ;
+    border:1px solid #393E46;  
+
+} 
+
+
+.sectspace{
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    height: 200px;
+    width: auto;
+
+}
+
+.secthome{
+padding-top: 80px;
+padding-bottom: 40px;
+margin-left: 70px;
+margin-right: 70px;
+height: auto;
+border-radius: 15%;
+}
+
+.sectabout{
+    background-color: #45474B ;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+    height: auto;
+    border-radius: 25px;
+}
+
+.sectabout .abc1{
+  background-color: #393E46 ;
+  margin-bottom: 25px;
+  padding-bottom: 50px;
+  border-radius: 10%;
+
+}
+
+.sectservice{
+    background-color: #45474B ;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+    height: auto;
+    border-radius: 25px;
+}
+
+.sectservice .cbox{
+    width: auto;
+    background-color: #393E46;
+    width: 18rem;
+    margin: 15px 0 15px 0;
+    padding: 10px 10px 10px 10px;
+}
+
+
+
+.secttestimonies{
+    background-color: #45474B ;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+    height: auto;
+    border-radius: 25px;
+}
+
+.secttestimonies .cb2{
+    background-color: #393E46;
+    margin: 0 0 25px 0 ;
+    padding:   25px  0 40px 0 ;
+    border-radius: 10%;
+    outline-width: 3px ;
+    outline-color: crimson;
+}
+
+.sectgallery{
+    background-color: #45474B ;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+    height: auto;
+    border-radius: 25px;
+}
+
+
+.sectgallery .photo-gallery {
+    color:#313437;
+    background-color:#fff;
+    border-radius: 25px;
+  }
+  
+  .sectgallery .photo-gallery p {
+    color:#7d8285;
+  }
+  
+  .sectgallery .photo-gallery h2 {
+    font-weight:bold;
+    margin-bottom:40px;
+    padding-top:40px;
+    color:inherit;
+  }
+  
+  @media (max-width:767px) {
+    .sectgallery .photo-gallery h2 {
+      margin-bottom:25px;
+      padding-top:25px;
+      font-size:24px;
+    }
+  }
+  
+  .sectgallery .photo-gallery .intro {
+    font-size:16px;
+    max-width:500px;
+    margin:0 auto 40px;
+  }
+  
+  .sectgallery .photo-gallery .intro p {
+    margin-bottom:0;
+  }
+  
+  .sectgallery .photo-gallery .photos {
+    padding-bottom:20px;
+  }
+  
+  .sectgallery .photo-gallery .item {
+    padding-bottom:30px;
+  }
+  
+
+.sectfooter{
+    min-height : 300px ;
+    min-width: 1200px;
+    background-color: #45474B ;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+    height: auto;
+    border-radius: 25px;
+}
+
+
+.sectspace .gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  bottom: 40px;
+  right: 50px;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+  transition: 0.1s ease;
+}

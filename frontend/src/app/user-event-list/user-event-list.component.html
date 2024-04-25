@@ -1,0 +1,128 @@
+<section class="sectevents">
+  <nav class="navbar navbar-expand-lg mx-3 bg-body-tertiary">
+    <div class="container-fluid">
+        <div class="row collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+          <div class="col-3">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <a class="navbar-brand" href="#">Filters : </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <select class="form-select" aria-label="Default select example">
+                  <option value="1">All categories</option>
+                  <option value="2">Movies</option>
+                  <option value="3">Concert</option>
+                  <option value="4">Theathre</option>
+                </select> 
+          </ul>
+          </div> 
+          <div class="col-6">
+              <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+          </div>
+          <div class="col">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <a class="navbar-brand" href="#">Sort By : </a>
+            <select class="form-select" aria-label="Default select example">
+              <option value="1">Newest</option>
+              <option value="2">Latest</option>
+              <option value="3">Expensive</option>
+              <option value="4">Cheaper</option>
+            </select>
+            </ul> 
+          </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container sectevent-list text-center  my-5 bg-body-tertiary">
+    <h1 class="text-center pb-2 pt-5 ">Events List</h1>
+    <div class="row text-center justify-content-evenly row-cols-1 row-cols-md-3 g-4 py-4">
+
+
+
+        <div class="col text-center" *ngFor="let event of events;let i = index" [class.active]="i == currentIndex">
+            <div class="card2 " >
+                <img src="/assets/gallery/{{event.event_picture}}" class="card2-img" alt="...">
+                <div class="card2-body" *ngIf="event.event_status === 'approved'"> 
+                    <h6>{{event.event_category}}</h6>
+                    <h2 class="card-title">{{event.event_name}}</h2>
+                    <p class="card-sub-title">Director : {{event.event_artist}}</p>
+                    <p class="card-sub-title">Duration : {{event.event_duration}} min</p>
+                    <p class="card-sub-title">Rating : 
+                      <span *ngFor="let _ of getRepeatArray(event.event_rating)" >
+                        <i class="fa fa-star checked"></i>
+                      </span>
+                      <span *ngFor="let _ of getRepeatArray(5-event.event_rating)" >
+                        <i class="fa fa-star"></i>
+                      </span>
+                    </p> 
+                    <p class="card-info">Description <br>{{event.event_description}}</p>
+                    <div class="container text-center">
+
+                        <button   (click)="setActiveEvent(event, i)"  [routerLink]="['/events', event.event_name]"  type="button" class="btn btn-outline-light my-2 mx-1">View <i class="fa-regular fa-eye" ></i></button>                      
+                        <button [routerLink]="['/cart', event.event_name]" type="button" class="btn btn-outline-warning my-2 mx-1">Cart <i class="fa-solid fa-cart-shopping"></i></button>         
+                    </div>
+                     
+                </div>
+                <div class="card2-body" *ngIf="event.event_status === 'rejected'"> 
+                  <h6>{{event.event_category}}</h6>
+                  <h2 class="card-title">{{event.event_name}}</h2>
+                  <p class="card-sub-title">Director : {{event.event_artist}}</p>
+                  <p class="card-sub-title">Duration : {{event.event_duration}} min</p>
+                  <p class="card-sub-title">Rating : 
+                    <span *ngFor="let _ of getRepeatArray(event.event_rating)" >
+                      <i class="fa fa-star checked"></i>
+                    </span>
+                    <span *ngFor="let _ of getRepeatArray(5-event.event_rating)" >
+                      <i class="fa fa-star"></i>
+                    </span>
+                  </p> 
+                  <p class="card-info">Description <br><h1 class="text-danger">BANNED</h1></p>
+                  <div class="container text-center">
+                    <div class="row g-2">
+
+                        
+                    </div>
+                  </div>
+                   
+              </div>
+              <div class="card2-body" *ngIf="event.event_status === 'pending'"> 
+                <h6>{{event.event_category}}</h6>
+                <h2 class="card-title">{{event.event_name}}</h2>
+                <p class="card-sub-title">Director : {{event.event_artist}}</p>
+                <p class="card-sub-title">Duration : {{event.event_duration}} min</p>
+                <p class="card-sub-title">Rating : 
+                  <span *ngFor="let _ of getRepeatArray(event.event_rating)" >
+                    <i class="fa fa-star checked"></i>
+                  </span>
+                  <span *ngFor="let _ of getRepeatArray(5-event.event_rating)" >
+                    <i class="fa fa-star"></i>
+                  </span>
+                </p> 
+                <p class="card-info">Description <br><h1 class="text-primary">UPCOMING</h1></p>
+                <div class="container text-center">                
+
+                    <button   (click)="setActiveEvent(event, i)"  [routerLink]="['/events', event.event_name]"  type="button" class="btn btn-outline-light my-2 mx-1">View <i class="fa-regular fa-eye" ></i></button>                      
+                                                   
+                </div>
+                 
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container align-items-center">
+  <div class="row justify-content-center">
+    <ul class="pagination p-1 col justify-content-center">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li> 
+    </ul>
+  </div>
+</div>
+</section>

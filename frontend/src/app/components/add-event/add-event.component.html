@@ -1,0 +1,234 @@
+
+<section class="sectevents py-5" *ngIf="!submitted">
+  <form class="submit-form  g-3"  name="form">
+  <div class="container px-4 px-lg-5 my-5" >
+      <div class="row gx-4 gx-lg-5 align-items-center">
+          <div class="col-md-6">
+            <img class="card-img-top mb-5 mb-md-0" [src]=" '../assets/gallery/default7.png'" alt=""  id="profile-pic"/>
+            <label for="image-Input" class="form-label">Upload A Picture For The Event</label>
+            <input class="form-control" accept="image/jpeg, image/png, image/jpg" type="file"  name="event_picture"  [(ngModel)]="event.event_picture"  id="imageInput" >
+          </div>
+          <div class="col-md-6">
+            <h2 class="display-5 fw-bolder mb-5">Create A New Event</h2>
+
+            <div class="container my-3 overflow-hidden text-center">
+              <div class="row gy-5">
+                <div class="col">
+                  <div class="p-1">
+                    <div class="form-group col align-item-center m-2">
+                      <input type="text" class="form-control " [(ngModel)]="event.event_name" placeholder="Event Name" name="event_name" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="p-1">
+                    <div class="form-group col align-item-center m-2">
+                      <input type="text" class="form-control "  [(ngModel)]="event.event_artist" placeholder="Event Artist" name="event_artist"  required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="container my-3 overflow-hidden text-center">
+              <div class="row gy-4">
+                <div class="col-4">
+                  <div class="p-1">
+                    <div class=" form-group col align-item-center m-1">
+                      <input type="number" class="form-control " [(ngModel)]="event.event_duration" placeholder="Duration min" name="event_duration"  min="0" max="180" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="p-1">
+                    <div class="form-group col align-item-center m-1">
+                      <input type="string" class="form-control " [(ngModel)]="event.event_start" placeholder="Start hh:mm" name="event_start"  value="" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="p-1">
+                    <div class="form-group col align-item-center m-1">
+                      <input type="string" class="form-control " [(ngModel)]="event.event_end" placeholder="End  hh:mm" name="event_end"  value="" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="container my-3 overflow-hidden text-center">
+              <div class="row gy-5">
+                <div class="col">
+                  <div class="p-1">
+                    <div class="form-group col align-item-center m-2">
+                      <select class="form-select" [(ngModel)]="event.event_location" name="event_location"  aria-label="Default select example">
+                          <option value="" selected>Select A Location</option>
+                          <option value="101">Room One</option>
+                          <option value="102">Room Two</option>
+                          <option value="103">Room Three</option>
+                        </select>              
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container my-3 overflow-hidden text-center">
+              <div class="row gy-5">
+                <div class="col">
+                  <div class="p-1">
+                    <div class="form-group col align-item-center m-2">
+                      <select class="form-select" [(ngModel)]="event.event_category" name="event_category"   aria-label="Default select example">
+                          <option value="" selected>Select A Category</option>
+                          <option value="Movie">Movie</option>
+                          <option value="Concert">Concert</option>
+                          <option value="Theathre">Theathre</option>
+                        </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="p-1">
+                    <div class="form-group col align-item-center m-2">
+                      <input class="form-control " [(ngModel)]="event.event_rating" name="event_rating" placeholder="Rating" type="number" min="0" max="5" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container my-3 overflow-hidden text-center">
+              <div class="row gy-5">
+                <div class="col">
+                  <div class="p-1">
+                    <div class="form-group col align-item-center m-2">
+                      <input type="text" class="form-control "  value="" [(ngModel)]="event.event_description" placeholder="Description" name="event_description"  required>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container my-3 overflow-hidden text-center" hidden>
+              <div class="row gy-5">
+                <div class="col">
+                  <div class="p-1">
+                    <div class="form-group col align-item-center m-2">
+                      <label for="event_rating" class="form-label">Status </label>      
+                      <select class="form-select" [(ngModel)]="event.event_status" name="event_status"  aria-label="Default select example" >
+                          <option value="pending">Pending</option>
+                        </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="container my-3 overflow-hidden text-center">
+              <div class="row gy-5">
+                <div class="col">
+                  <div class="p-1">
+                    <div class="form-group col align-item-center m-2">
+                      <button class="btn btn-outline-primary flex-shrink-0"  (click)="saveEvent()" type="submit">         
+                        Add New Event
+                    </button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+
+    
+          </div>
+      </div>
+  </div>
+</form>
+</section>
+
+<section class="sectevents py-5" *ngIf="submitted">
+
+  <div class="container px-4 px-lg-5 my-5" >
+      <div class="row gx-4 gx-lg-5 align-items-center">
+          <div class="col-md-6">
+            <img class="card-img-top mb-5 mb-md-0" src="../assets/gallery/default.jpg" alt="..." id="profile-pic"/>
+          </div>
+          <div class="col-md-6">
+            <h2 class="display-5 fw-bolder mb-5">Create A New Event</h2>
+        
+
+            <div class="container my-3 overflow-hidden text-center">
+              <div class="row gy-5">
+                <div class="col">
+                  <div class="p-1">
+                    <div class="form-group col align-item-center m-2">
+                      <div class="alert alert-success" >
+                        <h6>Congratulation !!!<br> You successfully created a new event</h6>
+                      </div>           
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="container my-3 overflow-hidden text-center">
+              <div class="row gy-5">
+                <div class="col">
+                  <div class="p-1">
+                    <div class="form-group col align-item-center m-2">
+                      <button class="btn btn-outline-primary flex-shrink-0" routerLink="../event-list" href="../events" >         
+                        Go Back To The Event List
+                    </button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+
+    
+          </div>
+      </div>
+  </div>
+
+</section>
+
+
+<script>
+  let profilePic = document.getElementById("profile-pic");
+  let imageInput = document.getElementById("imageInput");
+
+  imageInput.onchange = function(){
+    let fileName = imageInput.value.split("\\").pop();
+    profilePic.src = "/assets/gallery/" + fileName;
+  }
+</script>
+
+<script>
+  function handleFileChange(input) {
+    const fileName = input.value.split('\\').pop();
+    document.getElementById('formFile').innerText = 'File Name: ' + fileName;
+  }
+</script>
+
+<script>
+  document.getElementById('imageInput').addEventListener('change', function (event) {
+      const fileInput = event.target;
+      const previewImage = document.getElementById('previewImage');
+
+      const file = fileInput.files[0];
+
+      if (file) {
+          const reader = new FileReader();
+
+          reader.onload = function (e) {
+              previewImage.src = e.target.result;
+          };
+
+          reader.readAsDataURL(file);
+      }
+  });
+</script>

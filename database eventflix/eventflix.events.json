@@ -1,0 +1,294 @@
+[{
+  "_id": {
+    "$oid": "655885b2845c2e465c104868"
+  },
+  "event_id": "653047f4ddcb",
+  "moderator_id": {
+    "$oid": "653047f4ddcbdc763a5b3f48"
+  },
+  "event_name": "twilight",
+  "event_artist": "Catherine Hardwicke",
+  "event_duration": 122,
+  "event_start": "12:34",
+  "event_end": "12:34",
+  "event_location": "103",
+  "event_category": "Movie",
+  "event_rating": 5,
+  "event_description": " The story revolves around a teenage girl named Bella Swan, who falls in love with a vampire named Edward Cullen. ",
+  "event_picture": "gal20.jpg",
+  "event_status": "approved",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6558e7b29ccd9f96b476277d"
+  },
+  "event_id": "65304fsrdbdgb",
+  "moderator_id": {
+    "$oid": "653047f4ddcbdc763a5b3f48"
+  },
+  "event_name": "inception",
+  "event_artist": "Christopher Nolan",
+  "event_duration": 148,
+  "event_start": "12:34",
+  "event_end": "12:34",
+  "event_location": "102",
+  "event_category": "Concert",
+  "event_rating": 3,
+  "event_description": "explores of entering dreams to steal secrets. Dom Cobb, played by Leonardo DiCaprio, is a skilled thief who specializes in the dangerous art of extraction",
+  "event_picture": "gal23.jpg",
+  "event_status": "rejected",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6558f851c9f0d2e2a26a9949"
+  },
+  "event_id": "65gvgvhddcb",
+  "moderator_id": {
+    "$oid": "653047f4ddcbdc763a5b3f48"
+  },
+  "event_name": "Maleficent",
+  "event_artist": " Robert Stromberg",
+  "event_duration": 97,
+  "event_start": "13:34",
+  "event_end": "13:34",
+  "event_location": "room1",
+  "event_category": "Movie",
+  "event_rating": 2,
+  "event_description": " The film explores Maleficent's early life, the events that lead to her becoming a dark fairy, and her interactions with Princess Aurora.",
+  "event_picture": "gal22.jpg",
+  "event_status": "pending",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6558f85cc9f0d2e2a26a994b"
+  },
+  "event_id": "hjghgjhghj",
+  "moderator_id": {
+    "$oid": "653047f4ddcbdc763a5b3f48"
+  },
+  "event_name": "Divergent",
+  "event_artist": "Neil Burger",
+  "event_duration": 139,
+  "event_start": "12:34",
+  "event_end": "12:34",
+  "event_location": "room1",
+  "event_category": "movie",
+  "event_rating": 3,
+  "event_description": "The story is set in a dystopian future society where people are divided into distinct factions based on their personalities.",
+  "event_picture": "gal23.jpg",
+  "event_status": "pending",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6558f86fc9f0d2e2a26a994f"
+  },
+  "event_id": "jghjkgjkgjk",
+  "moderator_id": {
+    "$oid": "653047f4ddcbdc763a5b3f48"
+  },
+  "event_name": "event n 3",
+  "event_artist": "john",
+  "event_duration": 120,
+  "event_start": "12:34",
+  "event_end": "12:34",
+  "event_location": "room1",
+  "event_category": "dgx<gdgx",
+  "event_rating": 5,
+  "event_description": "gdrgdddhnfd",
+  "event_picture": "gal25.jpg",
+  "event_status": "approved",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "655a51e66e9904d22790ce2e"
+  },
+  "event_id": "event_202237",
+  "moderator_id": {
+    "$oid": "653047f4ddcbdc763a5b3f48"
+  },
+  "event_name": "The Call of the Wild",
+  "event_artist": " Chris Sanders",
+  "event_duration": 100,
+  "event_start": "10:10",
+  "event_end": "11:50",
+  "event_location": "101",
+  "event_category": "Movie",
+  "event_rating": 3,
+  "event_description": " the journey of a domesticated dog named Buck, who is stolen from his home in California and sold into the harsh life of an Alaskan sled dog during the Klondike Gold Rush.",
+  "event_picture": "gal27.jpg",
+  "event_status": "approved",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "655a60156e9904d22790ce66"
+  },
+  "event_id": "event_224121",
+  "moderator_id": {
+    "$oid": "653047f4ddcbdc763a5b3f48"
+  },
+  "event_name": "peaky blinders",
+  "event_artist": "john",
+  "event_duration": 15,
+  "event_start": "15:10",
+  "event_end": "15:12",
+  "event_location": "101",
+  "event_category": "Concert",
+  "event_rating": 1,
+  "event_description": "ddddddddddddddddddddddd",
+  "event_picture": "gal29.jpg",
+  "event_status": "rejected",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "655cd8048c7e22bccbf4ce24"
+  },
+  "event_id": "event_749887",
+  "moderator_id": {
+    "$oid": "653047f4ddcbdc763a5b3f48"
+  },
+  "event_name": "peaky blinders",
+  "event_artist": "john",
+  "event_duration": 18,
+  "event_start": "15:10",
+  "event_end": "15:12",
+  "event_location": "103",
+  "event_category": "Movie",
+  "event_rating": 4,
+  "event_description": "ddddddddddddddddddddddd",
+  "event_picture": "gal24.jpg",
+  "event_status": "pending",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "655cdc398c7e22bccbf4ce26"
+  },
+  "event_id": "event_158639",
+  "moderator_id": {
+    "$oid": "653047f4ddcbdc763a5b3f48"
+  },
+  "event_name": "peaky_blinders",
+  "event_artist": "john111",
+  "event_duration": 124,
+  "event_start": "10:00",
+  "event_end": "13:00",
+  "event_location": "102",
+  "event_category": "Theathre",
+  "event_rating": 5,
+  "event_description": "nice good movie",
+  "event_picture": "gal2.jpg",
+  "event_status": "approved",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "656f8fdfcac6dcc942f2850a"
+  },
+  "event_id": "event_274453",
+  "moderator_id": {
+    "$oid": "653047f4ddcbdc763a5b3f48"
+  },
+  "event_name": "House of the Dragon",
+  "event_artist": " Ryan J. Condal George R.R. Martin",
+  "event_duration": 50,
+  "event_start": "10:00",
+  "event_end": "10:50",
+  "event_location": "103",
+  "event_category": "Movie",
+  "event_rating": 5,
+  "event_description": "An internal succession war within House Targaryen at the height of its power, 172 years before the birth of Daenerys Targaryen.",
+  "event_picture": "gal41.jpg",
+  "event_status": "approved",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "656f9c26cac6dcc942f28515"
+  },
+  "event_id": "event_212501",
+  "moderator_id": {
+    "$oid": "653047f4ddcbdc763a5b3f48"
+  },
+  "event_name": "Vikings",
+  "event_artist": "Travis Fimmel ",
+  "event_duration": 180,
+  "event_start": "12:00",
+  "event_end": "15:00",
+  "event_location": "102",
+  "event_category": "Movie",
+  "event_rating": 5,
+  "event_description": "\"Vikings\" follows the legendary Viking chieftain Ragnar Lothbrok as he rises to power and explores new lands.",
+  "event_picture": "gal42.jpg",
+  "event_status": "approved",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6570303547b8cc6e5131ee9c"
+  },
+  "event_id": "event_854647",
+  "moderator_id": {
+    "$oid": "653047f4ddcbdc763a5b3f48"
+  },
+  "event_name": "Dark",
+  "event_artist": " Baran bo Odar",
+  "event_duration": 60,
+  "event_start": "12:00",
+  "event_end": "13:00",
+  "event_location": "102",
+  "event_category": "Movie",
+  "event_rating": 4,
+  "event_description": "\"Dark\" revolves around four interconnected families as they uncover a time travel conspiracy that spans several generations.",
+  "event_picture": "gal50.jpg",
+  "event_status": "pending",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657030f747b8cc6e5131eea0"
+  },
+  "event_id": "event_728803",
+  "moderator_id": {
+    "$oid": "653047f4ddcbdc763a5b3f48"
+  },
+  "event_name": "Now You See Me",
+  "event_artist": " Louis Leterrier",
+  "event_duration": 115,
+  "event_start": "10:00",
+  "event_end": "11:55",
+  "event_location": "101",
+  "event_category": "Movie",
+  "event_rating": 3,
+  "event_description": "They pull off bank heists during their performances and reward their audiences with the money. The film is known for its elaborate magic tricks, twists, and turns, keeping the audience guessing until the very end.",
+  "event_picture": "gal51.jpg",
+  "event_status": "pending",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6570324d47b8cc6e5131eea3"
+  },
+  "event_id": "event_128877",
+  "moderator_id": {
+    "$oid": "653047f4ddcbdc763a5b3f48"
+  },
+  "event_name": "The Matrix",
+  "event_artist": "Lana and Lilly Wachowski",
+  "event_duration": 136,
+  "event_start": "12:00",
+  "event_end": "14:16",
+  "event_location": "103",
+  "event_category": "Movie",
+  "event_rating": 5,
+  "event_description": "The story follows Thomas Anderson, a computer programmer who goes by the alias Neo, played by Keanu Reeves. Neo discovers the truth about the reality he's been living in—a simulated world created by intelligent machines to subdue the human population.",
+  "event_picture": "gal52.jpg",
+  "event_status": "pending",
+  "__v": 0
+}]

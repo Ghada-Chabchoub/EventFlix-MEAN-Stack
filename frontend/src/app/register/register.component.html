@@ -1,0 +1,211 @@
+<!--
+<section>
+  <div class="col-md-12">
+    <div class="card card-container">
+      <img
+        id="profile-img"
+        src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
+        class="profile-img-card"
+      />
+      <form
+        *ngIf="!isSuccessful"
+        name="form"
+        (ngSubmit)="f.form.valid && onSubmit()"
+        #f="ngForm"
+        novalidate
+      >
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            class="form-control"
+            name="username"
+            [(ngModel)]="form.username"
+            required
+            minlength="3"
+            maxlength="20"
+            #username="ngModel"
+            [ngClass]="{ 'is-invalid': f.submitted && username.errors }"
+          />
+          <div class="invalid-feedback" *ngIf="username.errors && f.submitted">
+            <div *ngIf="username.errors['required']">Username is required</div>
+            <div *ngIf="username.errors['minlength']">
+              Username must be at least 3 characters
+            </div>
+            <div *ngIf="username.errors['maxlength']">
+              Username must be at most 20 characters
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            [(ngModel)]="form.email"
+            required
+            email
+            #email="ngModel"
+            [ngClass]="{ 'is-invalid': f.submitted && email.errors }"
+          />
+          <div class="invalid-feedback" *ngIf="email.errors && f.submitted">
+            <div *ngIf="email.errors['required']">Email is required</div>
+            <div *ngIf="email.errors['email']">
+              Email must be a valid email address
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            name="password"
+            [(ngModel)]="form.password"
+            required
+            minlength="6"
+            #password="ngModel"
+            [ngClass]="{ 'is-invalid': f.submitted && password.errors }"
+          />
+          <div class="invalid-feedback" *ngIf="password.errors && f.submitted">
+            <div *ngIf="password.errors['required']">Password is required</div>
+            <div *ngIf="password.errors['minlength']">
+              Password must be at least 6 characters
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary btn-block">Sign Up</button>
+        </div>
+  
+        <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
+          Signup failed!<br />{{ errorMessage }}
+        </div>
+      </form>
+  
+      <div class="alert alert-success" *ngIf="isSuccessful">
+        Your registration is successful!
+      </div>
+    </div>
+</div>
+</section>
+-->
+
+
+<section class="sectsign">
+  <div class="h-100 gradient-form " >
+    <div class="container py-5">
+      <div class="row d-flex justify-content-center align-items-center ">
+        <div class="col-xl-10 py-5">
+          <div class="card rounded-3 text-black ">
+            <div class="row g-0 ">
+              <div class="col-lg-6">
+                <div class="card-body p-md-5 mx-md-4">
+  
+                  <div class="text-center">
+                    <img src="/assets/images/logo.png"
+                      style="width: 200px;" alt="logo">
+                    <h4 class="mt-1 mb-5 pb-1">We are The EventFlix Team</h4>
+                  </div>
+  
+                  <form *ngIf="!isSuccessful" name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+                    
+  
+                    <div class="form-group form-outline mb-4">
+                        <label class="form-label" for="username">Username</label>
+                      <input [(ngModel)]="form.username" 
+                      #username="ngModel"
+                      [ngClass]="{ 'is-invalid': f.submitted && username.errors }"
+                      required
+                      name="username"
+                       minlength="3"
+                        maxlength="20"
+                       type="text" id="form2Example11" class="form-control"
+                        placeholder="Username" />
+                        <div class="invalid-feedback" *ngIf="username.errors && f.submitted">
+                          <div *ngIf="username.errors['required']">Username is required</div>
+                          <div *ngIf="username.errors['minlength']">
+                            Username must be at least 3 characters
+                          </div>
+                          <div *ngIf="username.errors['maxlength']">
+                            Username must be at most 20 characters
+                          </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="form-group form-outline mb-4">
+                        <label class="form-label" for="email">Email</label>
+                        <input  [(ngModel)]="form.email" name="email"
+                         required
+                        email
+                        #email="ngModel"
+                        [ngClass]="{ 'is-invalid': f.submitted && email.errors }"
+                        type="email" id="form2Example11" class="form-control"
+                          placeholder=" email" />
+
+                          <div class="invalid-feedback" *ngIf="email.errors && f.submitted">
+                            <div *ngIf="email.errors['required']">Email is required</div>
+                            <div *ngIf="email.errors['email']">
+                              Email must be a valid email address
+                            </div>
+                          </div>
+                      </div>
+  
+                      <div class="form-group form-outline mb-4">
+                        <label class="form-label" for="password">Password</label>
+                        <input [(ngModel)]="form.password"
+                               name="password"
+                               class="form-control" placeholder="password" 
+                               required minlength="6"
+                               #password="ngModel"
+                               [ngClass]="{ 'is-invalid': f.submitted && password.errors }"/>
+                        <div class="invalid-feedback" *ngIf="password.errors && f.submitted">
+                            <div *ngIf="password.errors['required']">Password is required</div>
+                            <div *ngIf="password.errors['minlength']">
+                                Password must be at least 6 characters
+                            </div>
+                        </div>
+                    </div>
+                    
+  
+                    <div class="form-group text-center pt-1 mb-5 pb-1">
+                      <!--
+                      <button  class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3">Sign Up</button>
+                      -->
+                      <button class="coolBeans1" href="#">Sign Up</button>
+                     
+                    </div>
+                    <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
+                      Signup failed!<br />{{ errorMessage }}
+                    </div>
+  
+                    <div class="d-flex align-items-center justify-content-center pb-4">
+                      <p class="mb-0 me-2">already have an account?</p>
+                      <a href="/login" style="text-decoration: none;"><button type="button" class="coolBeans3">Login</button></a>
+                    </div>
+  
+                  </form>
+                  <div class="alert alert-success" *ngIf="isSuccessful">
+                    Your registration is successful!
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                  <h4 class="mb-4">We are more than just an event application</h4>
+                  <p class="small mb-0">Créez des souvenirs exceptionnels avec EventFlix : la plateforme de réservation en ligne qui 
+                    simplifie la planification d'événements. Réservez en toute simplicité, personnalisez chaque détail,
+                     et faites de chaque occasion un moment inoubliable.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sectspace"></section>

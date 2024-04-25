@@ -1,0 +1,20 @@
+.sectspace{
+    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
+    height: 100px;
+    width: auto;
+
+}
+.sectusers{
+    width: auto;
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
+} 
+
+.sectuser-list{ 
+    border-radius: 10px;
+    width: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+}

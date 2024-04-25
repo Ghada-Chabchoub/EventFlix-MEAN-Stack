@@ -1,0 +1,60 @@
+/*
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Playpen+Sans:wght@200&family=Press+Start+2P&family=Sometype+Mono&display=swap');
+
+section{  
+    height: auto;
+    width: auto ;
+    background-color: #393E46 ;
+  
+}
+.container{
+       background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+        background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593); 
+} 
+
+.col .h2 {
+    font-family: 'Agbalumo', sans-serif;
+    color: #fccb90;
+    font-weight: 400;
+    font-size: 3.5em; 
+}
+
+button{
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    color: white;
+    border: solid black 2.5px;
+    margin: 4px;
+}
+
+
+
+
+
+@media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+    }
+     */
+
+     .sectspace{
+        background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
+        height: 100px;
+        width: auto;
+    
+    }
+    .sectusers{
+        width: auto;
+        height: auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
+    } 
+    
+    .sectuser-list{ 
+        border-radius: 10px;
+        width: auto;
+        padding-right: 25px;
+        padding-left: 25px;
+    }

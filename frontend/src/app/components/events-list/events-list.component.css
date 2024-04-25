@@ -1,0 +1,141 @@
+
+.sectspace{
+    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
+    height: 100px;
+    width: auto;
+
+}
+.sectevents{
+    width: auto;
+    height: auto;
+    padding-top: 80px;
+    background: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
+}
+.sectevents nav{
+    border-radius: 10px;
+}
+
+.sectevent-list{
+    border-radius: 10px;
+    width: auto;
+    padding-left: 50px;
+}
+
+.card-img-top{
+    border-radius: 30px;
+    padding: 20px;
+} 
+.card{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+.btn-primary{
+    border-radius: 50px;
+    width: 120px;
+}
+.btn-primary:hover{
+    background-color: black;
+    border: none;
+}
+h3,h5{
+    color: rgb(0, 91, 228);
+}
+
+
+.box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2{
+    width: 340px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #fff;
+    position: relative;
+}
+
+.card2-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card2-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #354f7057;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+
+.card2:hover .card2-body{
+    right: 0;
+}
+
+.card2-body .card-title{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.card2-body .card-sub-title{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 5px;
+}
+
+.card2-body .card-info{
+    font-size: 16px;
+    line-height: 25px;
+    margin: 10px 0;
+    font-weight: 400;
+}
+.card2-body .card-btn{
+    color: #355070;
+    background: #b56576;
+    padding: 10px 20px;
+    width: 120px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.checked {
+    color: orange;
+  }
+
+  .btn-outline-success{
+    border-radius: 25px;
+    width: 100px;
+  }
+
+  .btn-outline-danger{
+    border-radius: 25px;
+    width: 160px; 
+  }
+
+  .btn-outline-light{
+    border-radius: 25px;
+    width: 100px;
+  }

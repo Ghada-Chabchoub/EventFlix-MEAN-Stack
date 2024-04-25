@@ -1,0 +1,100 @@
+.sectspace{
+    background: #fccb90;
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    height: 100px;
+    width: auto;
+
+}
+
+
+.gradient-custom-2 {
+    
+    background: #fccb90;
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    }
+    .small p{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+    }
+    .sectsign{
+        width: auto;
+        height: 900px;
+        background-color: #F5F7F8;
+    }
+    
+    .coolBeans1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        border: 2px solid currentColor;
+        border-radius: 3rem;
+        background: #fccb90;
+        background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+        background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+        font-family: roboto;
+        font-size: 1rem;
+        font-weight: bold;
+        overflow: hidden;
+        padding: 10px 128px;
+        position: relative;
+        text-decoration: none;
+        transition: 0.2s transform ease-in-out;
+        will-change: transform;
+        z-index: 0;
+      }
+ 
+      .coolBeans1:hover {
+        border: 2px solid transparent;
+        border-color:  #d8363a;
+        color:  #d8363a;
+        background: #ffffff;
+        transform: scale(1.05);
+        will-change: transform;
+      }
+
+      .coolBeans3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        border: 2px solid currentColor;
+        border-radius: 3rem;
+        background: #fccb90;
+        background-color: #00DBDE;
+        background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+        font-family: roboto;
+        font-size: 1rem;
+        font-weight: bold;
+        overflow: hidden;
+        padding: 10px 30px;
+        position: relative;
+        text-decoration: none;
+        transition: 0.2s transform ease-in-out;
+        will-change: transform;
+        z-index: 0;
+      }
+ 
+      .coolBeans3:hover {
+        border: 2px solid transparent;
+        border-color: #FC00FF;
+        color: #FC00FF;
+        background: #ffffff;
+        transform: scale(1.05);
+        will-change: transform;
+      }

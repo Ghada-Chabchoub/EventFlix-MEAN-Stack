@@ -1,0 +1,130 @@
+<!--
+<section>
+    <div class="container my-5">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col">
+          <span class="h2"> Event Details </span>
+  
+          <div  class="card mb-4">
+            <div class="card-body p-4" >
+  
+              <div class="row align-items-center">
+                <div class="col-md-2">
+                  <img src='/assets/gallery/{{eventDetails.event_picture}}'
+                    class="img-fluid">
+                </div>
+     
+                <div class="col-md-2 d-flex justify-content-center"> 
+                  <div >
+                    <p class="small text-muted mb-4 pb-2">Nom</p>
+                    <p class="lead fw-normal mb-0">{{eventDetails.event_name}}</p>
+
+                  </div>
+                </div>
+                <div class="col-md-2 d-flex justify-content-center">
+                  <div >
+
+                    <p class="small text-muted mb-4 pb-2">Catégorie</p>
+                    <p class="lead fw-normal mb-0">{{eventDetails.event_category}}</p>
+                  </div> 
+                </div>
+                <div class="col-md-2 d-flex justify-content-center">
+                  <div>
+                    <p class="small text-muted mb-4 pb-2">Début </p> 
+                    <p class="lead fw-normal mb-0">{{eventDetails.event_start}} GMT</p>
+                  </div>
+                </div>
+                <div class="col-md-2 d-flex justify-content-center">
+                  <div>
+                    <p class="small text-muted mb-4 pb-2">Fin</p>
+                    <p class="lead fw-normal mb-0">{{eventDetails.event_end}} GMT</p>
+                  </div>
+                </div>
+                <div class="col-md-2 d-flex justify-content-center">
+                  <div>
+                    <p class="small text-muted mb-4 pb-2">Localisation</p>
+                    <p class="lead fw-normal mb-0">{{eventDetails.event_location}}</p>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+  
+          <div class="card mb-5">
+            <div class="card-body p-4">
+  
+         
+                <p class="mb-0 me-5 d-flex align-items-center">
+                  <span class="small text-muted me-2">Description:</span> <span
+                    class="lead fw-normal">{{eventDetails.event_description}}</span>
+                </p>
+                <p class="mb-0 me-5 d-flex align-items-center">
+                    <span class="small text-muted me-2">Artistes:</span> <span
+                      class="lead fw-normal">{{eventDetails.event_artist}}</span>
+                  </p>
+                  <p class="card-sub-title">Rating : 
+                    <span *ngFor='let _ of getRepeatArray( eventDetails.event_rating )' >
+                      <i class="fa fa-star checked"></i>
+                    </span>
+                    <span *ngFor='let _ of getRepeatArray( 5-eventDetails.event_rating )' >
+                      <i class="fa fa-star"></i>
+                    </span>
+                  </p> 
+                  
+          
+  
+            </div>
+          </div>
+  
+          <div class="d-flex justify-content-end">
+            <a href="/booking">
+                <button type="button" class="btn btn-light btn-lg me-2">Réserver Maintenant</button>
+              </a>
+
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+
+-->
+
+  <section class="sectevents py-5" >
+    <form class="submit-form  g-3"  name="form">
+    <div class="container px-4 px-lg-5 my-5" >
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6">
+              <img class="card-img-top mb-5 mb-md-0" src='/assets/gallery/{{eventDetails.event_picture}}'  alt=""  id="profile-pic"/>
+            </div>
+            <div class="col-md-6">
+              <div class="small mb-2">Category / {{eventDetails.event_category}}</div>
+              <h1 class="display-5 fw-bolder my-4">{{eventDetails.event_name}}</h1>
+              <div class="small mb-2"> Artist : <strong>{{eventDetails.event_artist}}</strong></div>
+              <div class="small mb-2">Location :  <strong>{{eventDetails.event_location}}</strong></div>
+              <div class="small mb-2">Duration : <strong>{{eventDetails.event_duration}} minutes</strong> </div>
+              <div class="small mb-2">Start At : <strong> {{eventDetails.event_start}} </strong></div>
+              <div class="small mb-4">End At :  <strong>{{eventDetails.event_end}} </strong></div>
+              <div class="small mb-4">Rating:   
+                  <i class="fa fa-star checked"> {{eventDetails.event_rating}} </i>
+              </div>
+
+              <h5>Description : </h5>
+              <p class="lead">{{eventDetails.event_description}}</p>
+<!--
+              <div class="d-flex-center texr-center">
+                <div class="text-center">
+                  <button  class="btn btn-outline-dark flex-shrink-0" type="button">
+                    <i class="bi-cart-fill me-1"></i>
+                    <a href='/booking'></a>Add to cart
+                </button>
+                </div>
+              </div>
+-->
+          </div>
+        </div>
+    </div>
+  </form>
+  </section>
+  

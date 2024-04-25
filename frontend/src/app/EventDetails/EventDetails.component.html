@@ -1,0 +1,94 @@
+<section class="vh-100" >
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col">
+          <span class="h2"> Event Details </span>
+  
+          <div  class="card mb-4">
+            <div class="card-body p-4">
+  
+              <div class="row align-items-center">
+                <div class="col-md-2">
+                  <img src='/assets/gallery/{{eventDetails.event_picture}}'
+                    class="img-fluid">
+                </div>
+                <div class="col-md-2 d-flex justify-content-center"> 
+                  <div >
+                    <p class="small text-muted mb-4 pb-2">Nom</p>
+                    <p class="lead fw-normal mb-0" >{{ eventId }}</p>
+                    <p class="lead fw-normal mb-0">Five Nights At Freddy's</p>
+
+                  </div>
+                </div>
+                <div class="col-md-2 d-flex justify-content-center">
+                  <div *ngIf="eventDetails">
+
+                    <p class="small text-muted mb-4 pb-2">Catégorie</p>
+                    <p class="lead fw-normal mb-0">{{eventDetails}}
+                      Film</p>
+                  </div> 
+                </div>
+                <div class="col-md-2 d-flex justify-content-center">
+                  <div>
+                    <p class="small text-muted mb-4 pb-2">Début </p>
+                    <p class="lead fw-normal mb-0">16:00 GMT</p>
+                  </div>
+                </div>
+                <div class="col-md-2 d-flex justify-content-center">
+                  <div>
+                    <p class="small text-muted mb-4 pb-2">Fin</p>
+                    <p class="lead fw-normal mb-0">18:30 GMT</p>
+                  </div>
+                </div>
+                <div class="col-md-2 d-flex justify-content-center">
+                  <div>
+                    <p class="small text-muted mb-4 pb-2">Localisation</p>
+                    <p class="lead fw-normal mb-0">Pathé Mall Of Sousse</p>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+  
+          <div class="card mb-5">
+            <div class="card-body p-4">
+  
+              <div>
+                <p class="mb-0 me-5 d-flex align-items-center">
+                  <span class="small text-muted me-2">Description:</span> <span
+                    class="lead fw-normal">Un veilleur de nuit doit survivre cinq nuits en surveillant
+                     des animatroniques meurtrières dans une pizzeria.</span>
+                </p>
+                <p class="mb-0 me-5 d-flex align-items-center">
+                    <span class="small text-muted me-2">Artistes:</span> <span
+                      class="lead fw-normal">Elizabeth Lail, Mary Stuart Masterson, 
+                      Matthew Lillard, Piper Rubio, Kat Conner Sterling, De Emma Tammi</span>
+                  </p>
+                  <p class="mb-0 me-5 d-flex align-items-center">
+                    <span class="small text-muted me-2">Note:</span>
+                     <span
+                      class="lead fw-normal">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                  </p>
+              </div>
+  
+            </div>
+          </div>
+  
+          <div class="d-flex justify-content-end">
+            <a href="/booking">
+                <button type="button" class="btn btn-light btn-lg me-2">Réserver Maintenant</button>
+              </a>
+
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>

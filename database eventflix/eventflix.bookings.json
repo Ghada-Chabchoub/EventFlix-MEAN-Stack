@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "6570e3f500196b28633a1168"
+  },
+  "event_id": {
+    "$oid": "655885b2845c2e465c104868"
+  },
+  "user_id": {
+    "$oid": "6533b19883710cc904f3c7f2"
+  },
+  "seat_type": "normal",
+  "seat_price": 20,
+  "ticket_numbers": 2,
+  "food_options": [
+    "popcorn"
+  ],
+  "total_cost": 100,
+  "num_carte": "1247937852",
+  "code_carte": "1247937852",
+  "__v": 0
+}]

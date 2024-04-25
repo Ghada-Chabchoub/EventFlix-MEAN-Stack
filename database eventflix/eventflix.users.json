@@ -1,0 +1,111 @@
+[{
+  "_id": {
+    "$oid": "6533b19883710cc904f3c7f2"
+  },
+  "username": "ghada",
+  "email": "ghada@gmail.com",
+  "password": "$2a$08$uakpf/jB2SFUYYGOc2nP2ebKoo85.u26ggrlQ0ua7Xh/idT9ssTtu",
+  "roles": [
+    {
+      "$oid": "653047f4ddcbdc763a5b3f49"
+    }
+  ],
+  "phone": 0,
+  "adress": "",
+  "favors": [],
+  "cart": [],
+  "facture_history": [],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "65528e94fc33f5e32150d688"
+  },
+  "username": "test",
+  "email": "test@gmail.com",
+  "password": "$2a$08$0Ou50Hkn5MpPIKQvDztdUeWgs3Bp9C50Cre09fvGWuooR2UKSa./.",
+  "roles": [
+    {
+      "$oid": "653047f4ddcbdc763a5b3f48"
+    }
+  ],
+  "phone": 0,
+  "adress": "",
+  "favors": [],
+  "cart": [],
+  "facture_history": [],
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "65528f62fc33f5e32150d691"
+  },
+  "username": "test2",
+  "email": "test2@gmail.com",
+  "password": "$2a$10$4dRj/6oKf/HgNj7.fw.afOEo.mV9wlY.yB0xrRTwJo8Pc4iiFVWxS",
+  "roles": [
+    {
+      "$oid": "653047f4ddcbdc763a5b3f48"
+    }
+  ],
+  "phone": 0,
+  "adress": "",
+  "favors": [],
+  "cart": [],
+  "facture_history": [],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "656d024a716baf5fb778d08d"
+  },
+  "username": "ibrahim2",
+  "email": "ibrahim2@gmail.com",
+  "password": "$2a$08$HAsxQ3q7QCFXcbEjh6yyPexhvXh3BXhukyHXDCS0nNI76GGoPR6Ey",
+  "roles": [
+    {
+      "$oid": "653047f4ddcbdc763a5b3f47"
+    }
+  ],
+  "phone": 0,
+  "adress": "",
+  "cart": [],
+  "facture_history": [],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "656db59c12c553eef67b0b60"
+  },
+  "username": "ibrahim",
+  "email": "ibrahim@gmail.com",
+  "password": "$2a$08$YOOK6vxZPCOxIYu1WfSuyOcCwUjPCACLGzfm86LGjkXFsexN2HHiO",
+  "roles": [
+    {
+      "$oid": "653047f4ddcbdc763a5b3f48"
+    }
+  ],
+  "phone": 0,
+  "adress": "",
+  "cart": [],
+  "facture_history": [],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "656db5bf12c553eef67b0b66"
+  },
+  "username": "asma",
+  "email": "asma@gmail.com",
+  "password": "$2a$08$uakpf/jB2SFUYYGOc2nP2ebKoo85.u26ggrlQ0ua7Xh/idT9ssTtu",
+  "roles": [
+    {
+      "$oid": "653047f4ddcbdc763a5b3f47"
+    }
+  ],
+  "phone": 0,
+  "adress": "",
+  "cart": [],
+  "facture_history": [],
+  "__v": 3
+}]

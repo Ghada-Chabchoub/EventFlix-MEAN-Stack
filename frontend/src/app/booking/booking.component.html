@@ -1,0 +1,213 @@
+<!-- 
+<section class="h-100 h-custom">
+  <div class="container h-100 py-5">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col">
+        <span class="h2">Réservation</span>
+
+        <div class="table-responsive">
+          <form (submit)="submitBooking()" #bookingForm="ngForm">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">évènements</th>
+                  <th scope="col">type chaise</th>
+                  <th scope="col">nombre tickets</th>
+                  <th scope="col">nourriture</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    <div class="d-flex align-items-center">
+                      <img src="/assets/gallery/{{eventDetails.event_picture}}" alt="Event" class="img-fluid rounded-3" style="width: 120px;">
+                      <div class="flex-column ms-4">
+                        <p class="mb-2"><strong>{{ eventDetails.event_name }}</strong></p>
+                      </div>
+                    </div>
+                  </th>
+                  <td class="align-middle">
+                    <div class="form-group">
+                      <select class="form-select" id="seatTypeSelect" [(ngModel)]="bookingForm.value.seatType" name="seatType" required>
+                        <option value="1">Normale</option>
+                        <option value="2">VIP</option>
+                      </select>
+                    </div>
+                  </td>
+
+                  <td class="align-middle">
+                    <div class="d-flex flex-row">
+                      <button class="btn btn-link px-2" (click)="bookingForm.value.ticketNumber = bookingForm.value.ticketNumber - 1">
+                        <i class="fas fa-minus"></i>
+                      </button>
+
+                      <input id="form1" min="0" name="ticketNumber" [(ngModel)]="bookingForm.value.ticketNumber" type="number" class="form-control form-control-sm" style="width: 50px;" required />
+
+                      <button class="btn btn-link px-2" (click)="bookingForm.value.ticketNumber = bookingForm.value.ticketNumber + 1">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                  </td>
+                  <td class="align-middle">
+                    <div class="form-group">
+                      <label>Choix de nourriture :</label>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="popcornCheckbox" [checked]="bookingForm.value.foodOptions.includes('popcorn')" (change)="toggleFoodOption('popcorn')">
+                        <label class="form-check-label" for="popcornCheckbox">PopCorn</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="jusCheckbox" [checked]="bookingForm.value.foodOptions.includes('jus')" (change)="toggleFoodOption('jus')">
+                        <label class="form-check-label" for="jusCheckbox">Jus</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="eauCheckbox" [checked]="bookingForm.value.foodOptions.includes('eau')" (change)="toggleFoodOption('eau')">
+                        <label class="form-check-label" for="eauCheckbox">Eau</label>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td class="align-middle border-bottom-0">
+                    <p class="mb-0" style="font-weight: 500;">{{ totalAmount }} TND</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="row">
+              <div class="col-md-6 col-lg-4 col-xl-6">
+                <div class="form-outline mb-4">
+                  <input type="text" id="cardNumber" class="form-control" placeholder="Card Number" />
+                  <label class="form-label" for="cardNumber">Card Number</label>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-6">
+                <div class="form-outline mb-4">
+                  <input type="password" id="cardCode" class="form-control" placeholder="Card Code" />
+                  <label class="form-label" for="cardCode">Card Code</label>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg">
+              <div class="d-flex justify-content-between">
+                <span>Confirmer</span>
+              </div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+-->
+
+
+
+<section class="sectusers">
+  <div class="container sectuser-list text-center my-4 bg-body-tertiary">
+    <h2 class="pt-4 pb-2">Reservation</h2>
+
+    <form [formGroup]="bookingForm" (submit)="submitBooking()">
+      <div class="row text-center justify-content-evenly row-cols-1 row-cols-md-3 g-4 py-4">
+        <table class="table table-striped">
+          <thead>
+            <tr class="text-center">
+              <th class="col-4">Event</th>
+              <th class="col-2">Seat type</th>
+              <th class="col-2">number of tickets</th>
+              <th class="col-2">Food options</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">
+                <img src="../../assets/gallery/{{ eventDetails.event_picture }}" alt="Event" class="img-fluid rounded-3 col-8" style="width: 180px;">
+                <h3 class="mb-2 text-center"><strong>{{ eventDetails.event_name }}</strong></h3>
+              </th>
+              <td class="align-middle">
+                <div class="form-group">
+                  <select class="form-select" id="seatTypeSelect" formControlName="seat_type" name="seatType" required>
+                    <option value="normal" selected>Normale</option>
+                    <option value="vip">VIP</option>
+                  </select>
+                </div>
+              </td>
+              <td class="align-middle ">
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col align-self-center">
+                      <div class="d-flex flex-row">
+                        <button class="btn btn-link px-2" (click)="bookingForm.get('ticket_numbers')?.setValue(bookingForm.get('ticket_numbers')?.value - 1)">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                        <input id="form1" min="0" name="ticketNumber" formControlName="ticket_numbers" type="number" class="form-control form-control-sm" style="width: 50px;" required />
+                        <button class="btn btn-link px-2" (click)="bookingForm.get('ticket_numbers')?.setValue(bookingForm.get('ticket_numbers')?.value + 1)">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="align-middle">
+                <div class="form-group">
+                  <div class="container text-center">
+                    <div class="row g-1">
+                      <div class="col">
+                        <div class="p-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="popcornCheckbox" [checked]="bookingForm.get('food_options.popcorn')?.value" (change)="toggleFoodOption('popcorn')">
+                            <label class="form-check-label" for="popcornCheckbox">PopCorn</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="p-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="jusCheckbox" [checked]="bookingForm.get('food_options.jus')?.value" (change)="toggleFoodOption('jus')">
+                            <label class="form-check-label" for="jusCheckbox">Jus</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="p-2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="eauCheckbox" [checked]="bookingForm.get('food_options.eau')?.value" (change)="toggleFoodOption('eau')">
+                            <label class="form-check-label" for="eauCheckbox">Water</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="align-middle border-bottom-0">
+                <p class="mb-0" style="font-weight: 500;">{{ totalAmount }} TND</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-striped">
+          <tbody>
+            <tr class="center-text">
+              <td class="col-6">
+                <div class="form-outline mb-4">
+                  <input type="text" id="cardNumber" class="form-control" formControlName="num_carte" placeholder="Card Number" />
+                </div>
+              </td>
+              <td class="col-6">
+                <div class="form-outline mb-4">
+                  <input type="password" id="cardCode" class="form-control" formControlName="code_carte" placeholder="Card Code" />
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="btn btn-outline-primary" type="submit">Confirm Reservation</button>
+      </div>
+    </form>
+  </div>
+</section>

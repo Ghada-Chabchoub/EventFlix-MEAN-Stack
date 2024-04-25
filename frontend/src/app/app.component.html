@@ -1,0 +1,73 @@
+<div id="app">
+    
+    <nav class="navbar navbar-expand fixed-top navbar-dark bg-dark">
+    <div class="container text-center">
+      <div class="col-2 d-flex justify-content-start">
+          <a href="#" class="navbar-brand">EventFlix</a>
+      </div>
+
+      <div class="col-7 ">
+      <ul class="navbar-nav mr-auto d-flex justify-content-start" routerLinkActive="active">
+        <li class="nav-item">
+
+            <a href="/home" class="nav-link" routerLink="home">Home <i class="fa-solid fa-house " style="color: #ffffff;"></i> </a>
+       
+        </li>
+        <!--
+        <li class="nav-item" *ngIf="showAdminBoard">
+          <a href="/admin" class="nav-link" routerLink="admin">Admin Board <i class="fa-regular fa-clipboard" style="color: #ffffff;"></i></a>
+        </li>
+        -->
+        <li class="nav-item" *ngIf="showModeratorBoard">
+          <a href="/events" class="nav-link" routerLink="event-list">Events List <i class="fa-regular fa-clipboard" style="color: #ffffff;"></i></a>
+        </li>
+        <li class="nav-item" *ngIf="showModeratorBoard">
+          <a href="/events" class="nav-link" routerLink="add-event">new Event <i class="fa-regular fa-calendar-plus" style="color: #ffffff;"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="/user_event_list" class="nav-link" *ngIf="isLoggedIn && !showModeratorBoard && !showAdminBoard" routerLink="usereventlist">Events List <i class="fa-solid fa-list" style="color: #ffffff;"></i></a>
+        </li>
+        <li class="nav-item" *ngIf="showAdminBoard">
+          <a href="/admin_event_list" class="nav-link" routerLink="admineventlist">Events List <i class="fa-regular fa-clipboard" style="color: #ffffff;"></i></a>
+        </li>
+        <li class="nav-item" *ngIf="showAdminBoard">
+          <a href="/adminmanageusers" class="nav-link" routerLink="adminmanageusers">Users List <i class="fa-regular fa-clipboard" style="color: #ffffff;"></i></a>
+        </li>
+<!--
+      <li class="nav-item">
+          <a href="/booking" class="nav-link" *ngIf="isLoggedIn && !showModeratorBoard && !showAdminBoard" routerLink="cart">Cart <i  class="fa-solid fa-cart-shopping" style="color: #fafafa;"></i> </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/EventDetails" class="nav-link" *ngIf="isLoggedIn && !showModeratorBoard && !showAdminBoard">Event Details <i class="fa-solid fa-cart-shopping" style="color: #fafafa;"></i> </a>
+      </li>
+-->
+      </ul>
+      </div>
+  
+      <div class="col-3 d-flex justify-content-around">
+      <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
+        <li class="nav-item">
+          <a href="/register" class="nav-link" routerLink="register">Sign Up <i class="fa-solid fa-key" style="color: #ffffff;"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="/login" class="nav-link" routerLink="login">Login  <i class="fa-solid fa-arrow-right-to-bracket" style="color: #ffffff;"></i></a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
+        <li class="nav-item">
+          <a href="/profile" class="nav-link" routerLink="profile">{{ username }} <i class="fa-regular fa-user" style="color: #ffffff;"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href class="nav-link" (click)="logout()">Logout <i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i></a>
+          
+        </li>
+      </ul>
+      </div>
+
+ 
+    </div>
+    </nav>
+    <router-outlet></router-outlet>
+   
+</div>

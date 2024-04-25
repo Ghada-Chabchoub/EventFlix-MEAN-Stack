@@ -1,0 +1,68 @@
+/*
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Playpen+Sans:wght@200&family=Press+Start+2P&family=Sometype+Mono&display=swap');
+section{  
+    height: 900px;
+    width: auto ;
+    background-color: #393E46 ;
+    border:1px solid #393E46;  
+} 
+
+.col {
+    width: 300px; 
+    height: 700px;
+    border: 4px solid #000; 
+    border-radius: 15px; 
+    padding: 20px;
+    /* Gradient background styles */
+
+
+/*
+.col .h2 {
+    font-family: 'Agbalumo', sans-serif;
+    color: #fccb90;
+    font-weight: 400;
+    font-size: 3.5em; 
+}
+.card {
+    margin-top: 20px;
+}
+.float-end{
+    width: 300px; 
+    height: 100px;
+}
+.lead i {
+    color: #dd3675;
+  }
+button{
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    color: white;
+    border: solid black 2.5px;
+}
+
+.checked {
+    color: rgb(206, 149, 43);
+  }
+
+*/
+
+.sectevents{
+    width: auto;
+    height: auto;
+    padding-top: 80px;
+    background: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
+}
+.container{
+    background-color: aliceblue;
+
+}
+
+.checked {
+    color: orange;
+  }
+
+  .btn-outline-dark{
+    border-radius: 25px;
+    width: 220px;
+  }
+  

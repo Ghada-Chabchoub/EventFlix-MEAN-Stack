@@ -1,0 +1,38 @@
+
+<section class="sectusers">
+  <div class="container sectuser-list text-center my-4 bg-body-tertiary">
+    
+    <h2 class="pt-4 pb-2">Users Management</h2>
+    <button class="btn btn-outline-primary" (click)="loadUsers()">Refresh Users</button>
+
+    <div class="row text-center justify-content-evenly row-cols-1 row-cols-md-3 g-4 py-4">
+    <table class="table table-striped">
+      <thead>
+        <tr class="text-center"> 
+          <th>ID</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Role</th>
+
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of musers">
+          <td>{{ user._id }}</td>
+          <td>{{ user.username }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ getRoleName(user.roles) }}</td>
+          <td>
+            <button *ngIf=" getRoleName(user.roles) === 'User' " class="btn btn-outline-success mx-2 px-3"
+            (click)="promoteUser(user)">Promote</button>
+            <button *ngIf=" getRoleName(user.roles) === 'Moderator'" class="btn btn-outline-warning mx-2 px-3"
+            (click)="demoteUser(user)">Demote</button>
+            <button *ngIf="getRoleName(user.roles) !== 'Admin'" class="btn btn-outline-danger" (click)="deleteUser(user)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Playpen+Sans:wght@200&family=Press+Start+2P&family=Sometype+Mono&display=swap');
+section{  
+    height: auto;
+    width: auto ;
+    background-color: #393E46 ;
+    border:1px solid #393E46;  
+} 
+
+.col {
+    width: 300px; 
+    height: 600px;
+    border: 4px solid #000; 
+    border-radius: 15px; 
+    padding: 20px;
+    /* Gradient background styles */
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+.col .h2 {
+    font-family: 'Agbalumo', sans-serif;
+    color: #fccb90;
+    font-weight: 400;
+    font-size: 3.5em; 
+}
+.card {
+    margin-top: 20px;
+}
+.float-end{
+    width: 300px; 
+    height: 100px;
+}
+.lead i {
+    color: #dd3675;
+  }
+button{
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    color: white;
+    border: solid black 2.5px;
+}
